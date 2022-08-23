@@ -1,0 +1,43 @@
+div {
+  background-color: #333333;
+}
+
+h1 {
+  text-align: left;
+  color: white;
+  font-size: 35px;
+  padding: 8px;
+}
+
+caption {
+  text-align: left;
+}
+
+h2 {
+  border-bottom: 2px solid #d5d5d5;
+  color: black;
+  font-size: 35px;
+  padding: 8px;
+  text-align: align;
+}
+
+table {
+  margin: 0 auto;
+  width: 50%;
+  height: 50px;
+  border: 1px solid #d5d5d5;
+  border-spacing: 0;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  border: 1px solid #d5d5d5;
+}
+
+th {
+  background-color: #eeeeee;
+  color: black;
+}
