@@ -6,50 +6,53 @@
 :root {
   --cor-gradient-1: hsl(323, 71%, 29%);
   --cor-gradient-2: hsl(258, 45%, 15%);
-  --cor-fundo: hsl(0, 0%, 100%);
-  --cor-resultado: hsl(0, 0%, 100%);
+  --cor-white: hsl(0, 0%, 100%);
   --cor-resul: hsl(0, 0%, 17%);
 }
 
-.background{
-    background: linear-gradient(90deg, var(--cor-gradient-1), var(--cor-gradient-2));
-    height: 100vh;
-    color: white;
-    text-align: center;
+.background {
+  background: linear-gradient(
+    90deg,
+    var(--cor-gradient-1),
+    var(--cor-gradient-2)
+  );
+  height: 100vh;
+  color: white;
+  text-align: center;
 }
 
-.calculadora{
-    position: absolute;
-    background-color: var(--cor-gradient-1);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 10px;
-    padding: 15px;
+.calculadora {
+  position: absolute;
+  background-color: var(--cor-gradient-1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 15px;
 }
 
-.botao{
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    cursor: pointer;
-    margin: 1px;
-    background-color: var(--cor-gradient-2);
-    color: var(--cor-resultado);
+.botao {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 1px;
+  background-color: var(--cor-gradient-2);
+  color: var(--cor-white);
 }
 
-.botao:hover{
-    background-color: var(--cor-gradient-1);
+.botao:hover {
+  background-color: var(--cor-gradient-1);
 }
 
-#resultado{
-    background-color: var(--cor-resultado);
-    width: 207px;
-    height: 30px;
-    margin: 5px;
-    font-size: 25px;
-    color: var(--cor-resul);
-    text-align: right;
-    padding: 1px;
-    overflow: hidden;
+#resultado {
+  background-color: var(--cor-white);
+  width: 207px;
+  height: 30px;
+  margin: 5px;
+  font-size: 25px;
+  color: var(--cor-resul);
+  text-align: right;
+  padding: 1px;
+  overflow: hidden;
 }
