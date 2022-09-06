@@ -12,12 +12,12 @@
 
 .background {
   background: linear-gradient(
-    90deg,
+    70deg,
     var(--cor-gradient-1),
     var(--cor-gradient-2)
   );
   height: 100vh;
-  color: white;
+  color: var(--cor-white);
   text-align: center;
 }
 
