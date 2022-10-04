@@ -8,59 +8,44 @@
 
     <link rel="stylesheet" href="styles.css" />
   </head>
-
-  <div>
-<h1>Notas: 5º Período</h1>
-  </div>
-
   <body>
-    <table>
+    <div class="content-wrapper">
+      <h1>Notas: 5º Período</h1>
+      <h3>.</h3>
+    </div>
 
+    <table class="formulario">
       <caption>
         <h2>Alunos</h2>
       </caption>
 
-      <thead>
-        <tr>
-          <th>Nome</th>
-          <th>1º Bimestre</th>
-          <th>2º Bimestre</th>
-          <th>Média</th>
-          <th>Situação</th>
-        </tr>
-      </thead>
-
       <tr>
-        <td>Paulo</td>
-        <td>10</td>
-        <td>8</td>
-        <td>0</td>
-        <td>Reprovado</td>
+        <th>Nome</th>
+        <th>1º Bimestre</th>
+        <th>2º Bimestre</th>
       </tr>
 
       <tr>
-        <td>Pedro</td>
-        <td>10</td>
-        <td>9</td>
-        <td>0</td>
-        <td>Reprovado</td>
+        <td><input type="text" id="nome" /></td>
+        <td><input type="text" id="bimestre1" /></td>
+        <td><input type="text" id="bimestre2" /></td>
       </tr>
 
       <tr>
-        <td>Jorge</td>
-        <td>9</td>
-        <td>8</td>
-        <td>0</td>
-        <td>Reprovado</td>
-      </tr>
-
-      <tr>
-        <td>Maria</td>
-        <td>9</td>
-        <td>9</td>
-        <td>0</td>
-        <td>Reprovado</td>
+        <th class="button" colspan="5">
+          <input type="submit" value="Adicionar" onclick="Sub()" />
+        </th>
       </tr>
     </table>
+
+    <table class="resultado" id="TableScore">
+      <tr>
+        <th>Nome</th>
+        <th>Total</th>
+        <th>Media</th>
+        <th>Situação</th>
+      </tr>
+    </table>
+    <script src="main.js"></script>
   </body>
 </html>

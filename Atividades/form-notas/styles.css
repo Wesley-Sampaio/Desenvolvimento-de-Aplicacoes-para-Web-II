@@ -1,43 +1,117 @@
-div {
-  background-color: #333333;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--clr-neon) #000;
+}
+
+:root {
+  --cor-gradient-1: hsl(323, 71%, 29%);
+  --cor-gradient-2: hsl(258, 45%, 15%);
+  --clr-font-main: hsl(208, 100%, 97%);
+  --clr-hover: hsl(271, 76%, 53%);
+  --clr-glass: hsl(271 76% 53% / 0.2);
+  --clr-neon: #bc13fe;
+
+  --ff-poppins: "Poppins";
+  --ff-inter: "Inter";
+  font-size: 10px;
+}
+
+body,
+html {
+  width: 100vw;
+  font-size: 1.6rem;
+  font-family: var(--ff-poppins);
+  color: var(--clr-font-main);
+  background: linear-gradient(
+    70deg,
+    var(--cor-gradient-1),
+    var(--cor-gradient-2)
+  );
+  height: 100vh;
+}
+
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 h1 {
   text-align: left;
-  color: white;
+  color: var(--clr-font-main);
   font-size: 35px;
   padding: 8px;
 }
 
+h3{
+
+}
+
+.formulario {
+  background-color: var(--cor-gradient-1);
+  margin: 0 auto;
+  width: 50%;
+  height: 50px;
+  border-spacing: 0;
+  border-radius: 10px;
+  padding: 15px;
+}
+
 caption {
   text-align: left;
+  margin-bottom: 30px;
 }
 
 h2 {
   border-bottom: 2px solid #d5d5d5;
-  color: black;
+  color: var(--clr-font-main);
   font-size: 35px;
   padding: 8px;
   text-align: align;
 }
 
-table {
-  margin: 0 auto;
-  width: 50%;
-  height: 50px;
-  border: 1px solid #d5d5d5;
-  border-spacing: 0;
+th {
+  background-color: var(--cor-gradient-2);
+  color: var(--clr-font-main);
 }
 
-th,
-td {
+th, td {
   text-align: center;
   padding: 5px;
   font-size: 20px;
-  border: 1px solid #d5d5d5;
 }
 
-th {
-  background-color: #eeeeee;
-  color: black;
+input[type="text"] {
+  width: 90%;
+  height: 40px;
+  border: 1px solid #d5d5d5;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.resultado {
+  background-color: var(--cor-gradient-1);
+  margin: 20px auto;
+  width: 50%;
+  height: 50px;
+  border-spacing: 0;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.button {
+  background-color: var(--cor-gradient-1) !important;
+}
+
+input[type="submit"] {
+  background-color: var(--cor-gradient-2);
+  color: var(--clr-font-main);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  cursor: pointer;
 }
