@@ -1,11 +1,11 @@
 function Sub() {
-  var n, k, r, e, v, sum, avg;
-  n = document.getElementById("nome").value;
-  k = parseFloat(document.getElementById("bimestre1").value);
-  r = parseFloat(document.getElementById("bimestre2").value);
+  var x, y, z, sum, avg;
+  x = document.getElementById("nome").value;
+  y = parseFloat(document.getElementById("bimestre1").value);
+  z = parseFloat(document.getElementById("bimestre2").value);
 
   // calcula a média
-  sum = k + r;
+  sum = y + z;
   avg = sum / 2;
 
   // Gera lista de notas
@@ -16,7 +16,7 @@ function Sub() {
   var cell3 = row.insertCell(0);
   var cell4 = row.insertCell(0);
 
-  cell4.innerHTML = n;
+  cell4.innerHTML = x;
   cell3.innerHTML = sum;
   cell2.innerHTML = avg;
 
