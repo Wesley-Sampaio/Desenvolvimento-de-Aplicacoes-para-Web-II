@@ -46,8 +46,7 @@ h1 {
   padding: 8px;
 }
 
-h3{
-
+h3 {
 }
 
 .formulario {
@@ -78,7 +77,8 @@ th {
   color: var(--clr-font-main);
 }
 
-th, td {
+th,
+td {
   text-align: center;
   padding: 5px;
   font-size: 20px;
@@ -94,7 +94,7 @@ input[type="text"] {
 
 .resultado {
   background-color: var(--cor-gradient-1);
-  margin: 20px auto;
+  margin: 30px auto;
   width: 50%;
   height: 50px;
   border-spacing: 0;
@@ -112,6 +112,24 @@ input[type="submit"] {
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+label.ValidaNome {
+  color: red;
+  margin-left: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  background-color: var(--cor-gradient-2);
+  color: var(--clr-font-main);
+  border-radius: 5px;
+  padding: 5px 10px;
   font-size: 1.6rem;
   cursor: pointer;
 }

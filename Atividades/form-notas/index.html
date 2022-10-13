@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form-notas</title>
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="content-wrapper">
@@ -14,38 +14,47 @@
       <h3>.</h3>
     </div>
 
-    <table class="formulario">
-      <caption>
-        <h2>Alunos</h2>
-      </caption>
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+      <table class="formulario">
+        <caption>
+          <h2>Alunos</h2>
+        </caption>
 
+        <tr>
+          <th>
+            <label>Nome</label
+            ><label class="ValidaNome hide" id="ValidaNome"
+              >Este campo é obrigatório.</label
+            >
+          </th>
+          <th>1º Bimestre</th>
+          <th>2º Bimestre</th>
+        </tr>
+
+        <tr>
+          <td><input type="text" name="nome" id="nome" /></td>
+          <td><input type="text" name="bimestreUm" id="bimestreUm" /></td>
+          <td><input type="text" name="bimestreDois" id="bimestreDois" /></td>
+        </tr>
+
+        <tr>
+          <th class="button" colspan="5">
+            <input type="submit" value="Adicionar" />
+          </th>
+        </tr>
+      </table>
+    </form>
+
+    <table class="resultado" id="listaNotas">
       <tr>
         <th>Nome</th>
         <th>1º Bimestre</th>
         <th>2º Bimestre</th>
-      </tr>
-
-      <tr>
-        <td><input type="text" id="nome" /></td>
-        <td><input type="text" id="bimestre1" /></td>
-        <td><input type="text" id="bimestre2" /></td>
-      </tr>
-
-      <tr>
-        <th class="button" colspan="5">
-          <input type="submit" value="Adicionar" onclick="Sub()" />
-        </th>
-      </tr>
-    </table>
-
-    <table class="resultado" id="TableScore">
-      <tr>
-        <th>Nome</th>
-        <th>Total</th>
-        <th>Media</th>
+        <th>Média</th>
         <th>Situação</th>
+        <th></th>
       </tr>
     </table>
-    <script src="main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
